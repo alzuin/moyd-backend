@@ -1,0 +1,22 @@
+name = "lead-magnet-handler"
+main = "src/index.js"
+compatibility_date = "2024-05-11"
+
+routes = [
+  { pattern = "api.moyd.co.uk/*", zone_name = "moyd.co.uk" }
+]
+
+[[kv_namespaces]]
+binding = "LEADS_KV"
+id = "ec62de07bed047cfab2b7385d7a45927"
+
+[vars]
+PDF_URL = "https://moyd.co.uk/public/TechBookletMoyd.pdf"
+RESEND_FROM_EMAIL = "hello@moyd.co.uk"
+CLICKUP_LIST_ID = "901510988905"
+
+[observability.logs]
+enabled = true
+
+
+
